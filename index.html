@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="KeyFilm Gulf & Digital">
+<meta property="og:description" content="The launch and content arm of Key Films, Cairo: channel and platform launch, media buying, content and production across MENA.">
+<meta property="og:image" content="https://keyfilm.net/images/sphinx-avenue.jpg">
+<meta property="og:url" content="https://keyfilm.net/">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>KeyFilm Gulf &amp; Digital</title>
+<meta name="description" content="KeyFilm Gulf & Digital — the content, streaming and launch arm of Key Films, Cairo. Original series, OTT strategy, production services and launch campaigns across MENA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;600&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+/* Layout: a single editorial column framed like a film strip — timecode rails mark each section, English leads with Arabic set beside it in RTL. */
+:root{
+  --bg:#F2F4F1; --surface:#E6EAE5; --fg:#14211F; --muted:#56635F; --line:#C9D1CB;
+  --accent:#0F6B5C; --lamp:#B9771A; --onaccent:#F2F4F1;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --ar:"IBM Plex Sans Arabic","Geeza Pro","Segoe UI",Tahoma,sans-serif;
+  --ar-display:"Reem Kufi","IBM Plex Sans Arabic","Geeza Pro",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1615; --surface:#16211F; --fg:#E4EAE7; --muted:#9AA8A3; --line:#2A3835;
+  --accent:#43B59D; --lamp:#E3A54B; --onaccent:#0E1615; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1615; --surface:#16211F; --fg:#E4EAE7; --muted:#9AA8A3; --line:#2A3835;
+  --accent:#43B59D; --lamp:#E3A54B; --onaccent:#0E1615; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:clamp(16px,5vw,48px)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lamp);outline-offset:3px;border-radius:2px}
+[lang="ar"]{font-family:var(--ar);direction:rtl}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:.04em;text-transform:uppercase;color:var(--fg);text-decoration:none;line-height:1}
+.mark span{color:var(--accent)}
+.mark small{display:block;font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;color:var(--muted);margin-top:4px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover{color:var(--fg)}
+
+/* hero */
+.hero{padding-block:clamp(48px,9vw,104px) clamp(32px,6vw,64px)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--lamp);margin:0 0 18px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:end}
+h1{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(46px,8.4vw,104px);line-height:.92;letter-spacing:.005em;margin:0;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.hero-ar h2{font-family:var(--ar-display);font-weight:700;font-size:clamp(26px,3.6vw,38px);line-height:1.35;margin:0 0 12px}
+.hero-ar p{margin:0;color:var(--muted);font-size:16px}
+.lede{max-width:62ch;font-size:19px;margin:32px 0 0;color:var(--fg)}
+
+/* timecode rail */
+.rail{border-block:1px solid var(--line);background:var(--surface)}
+.rail .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;padding-block:14px;font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.rail b{color:var(--fg);font-weight:500}
+
+/* sections */
+section{padding-block:clamp(56px,8vw,96px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:36px}
+.sec-head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(30px,4.4vw,46px);line-height:1;margin:0;letter-spacing:.01em}
+.sec-head .ar{font-family:var(--ar-display);font-size:22px;color:var(--muted);direction:rtl}
+.tc{font-family:var(--mono);font-size:12px;color:var(--lamp);letter-spacing:.1em;display:block;margin-bottom:8px}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc{background:var(--bg);padding:28px 28px 32px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.svc h3{font-size:21px;font-weight:600;margin:0;line-height:1.25}
+.svc .ar-t{font-family:var(--ar);direction:rtl;color:var(--accent);font-weight:600;font-size:16px;margin:0}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+.svc ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.svc li{font-family:var(--mono);font-size:12px;border:1px solid var(--line);padding:3px 8px;border-radius:2px;color:var(--fg)}
+
+/* images */
+.hero-img{margin:0}
+.hero-img img{display:block;width:100%;height:clamp(240px,46vw,560px);object-fit:cover;max-width:100%}
+.hero-img figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);padding-block:10px;letter-spacing:.04em}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.gallery figure{margin:0;min-width:0;background:var(--surface)}
+.gallery .g-wide{grid-column:span 2}
+.gallery img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;max-width:100%}
+.gallery .g-wide img{aspect-ratio:auto;height:100%;max-height:420px}
+.gallery figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);padding:8px 10px}
+.portrait{display:block;width:120px;height:120px;object-fit:cover;filter:grayscale(1);margin-bottom:18px;max-width:100%}
+
+.ads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 14px}
+.ad{display:flex;flex-direction:column;gap:4px;min-width:0;color:var(--fg);text-decoration:none}
+.ad img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;max-width:100%;margin-bottom:6px}
+.ad b{font-weight:600;font-size:16px;line-height:1.3}
+.ad span{font-size:14px;color:var(--muted)}
+.ad:hover b{color:var(--accent)}
+.person-head{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+.person-head .portrait{margin:0}
+.social{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:16px;font-family:var(--mono);font-size:13px}
+
+/* launch phases */
+.phases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,36px)}
+.phases li{min-width:0;border-top:3px solid var(--accent);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.phases h3{font-size:21px;font-weight:600;margin:0;line-height:1.25}
+.phases .ar-t{font-family:var(--ar);direction:rtl;color:var(--accent);font-weight:600;font-size:16px;margin:0}
+.phases p{margin:0;color:var(--muted);font-size:16px}
+.kpis{margin-top:40px;background:var(--surface);padding:22px 24px}
+.kpis ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;font-weight:500}
+
+/* people */
+.people{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.person{min-width:0}
+.person h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.6vw,52px);line-height:.95;margin:0}
+.role{font-family:var(--mono);font-size:13px;color:var(--accent);margin:10px 0 18px;letter-spacing:.04em}
+.person p{margin:0 0 14px;max-width:62ch}
+.person .ar-bio{font-family:var(--ar);direction:rtl;color:var(--muted);font-size:16px}
+.cv{list-style:none;margin:18px 0 0;padding:0;border-top:1px solid var(--line)}
+.cv li{display:grid;grid-template-columns:8.5ch minmax(0,1fr);gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.cv time{font-family:var(--mono);font-size:13px;color:var(--lamp);font-variant-numeric:tabular-nums;padding-top:2px}
+.partner{background:var(--surface);padding:28px;border-left:3px solid var(--accent);align-self:start}
+.partner h3{font-size:clamp(28px,3.4vw,38px)}
+
+/* clients */
+.clients{columns:4 160px;column-gap:28px;margin:0;padding:0;list-style:none}
+.clients li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.note{font-size:14px;color:var(--muted);margin-top:18px}
+
+/* contact */
+.contact{background:var(--accent);color:var(--onaccent)}
+.contact .sec-head{border-color:color-mix(in srgb,var(--onaccent) 30%,transparent)}
+.contact .sec-head .ar{color:var(--onaccent);opacity:.8}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:start}
+.email{font-family:var(--display);font-weight:800;font-size:clamp(30px,5.4vw,60px);letter-spacing:.01em;line-height:1;word-break:break-all;color:var(--onaccent);text-decoration:none}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.btn{font:600 15px var(--body);padding:11px 18px;border:1.5px solid var(--onaccent);background:transparent;color:var(--onaccent);cursor:pointer;border-radius:2px;text-decoration:none}
+.btn.solid{background:var(--onaccent);color:var(--accent)}
+.addr{font-size:15px;line-height:1.7}
+.addr b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;opacity:.85;margin-bottom:4px}
+.addr a{color:var(--onaccent)}
+.contact [lang="ar"]{opacity:.9}
+
+footer{padding-block:28px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media (max-width:760px){
+  .hero-grid,.people,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .services,.phases{grid-template-columns:minmax(0,1fr)}
+  .gallery{grid-template-columns:minmax(0,1fr)}
+  .ads{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery .g-wide{grid-column:auto}
+  .gallery .g-wide img{aspect-ratio:3/2;height:auto}
+  .sec-head{grid-template-columns:minmax(0,1fr)}
+  nav{gap:14px}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">Key<span>Film</span><small>GULF &amp; DIGITAL</small></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#ads">Commercials</a>
+      <a href="#launch">Launch</a>
+      <a href="#people">Partners</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="eyebrow">Channel &amp; platform launch · Media buying · Content · Production</p>
+    <div class="hero-grid">
+      <h1>We launch channels and platforms for the <em>Arab screen</em></h1>
+      <div class="hero-ar" lang="ar">
+        <h2>نطلق القنوات والمنصات للشاشة العربية</h2>
+        <p>من التوزيع عبر الأقمار الصناعية والمنصات الرقمية، إلى حملات الإطلاق وشراء المساحات الإعلانية والمحتوى اليومي، في الخليج ومصر والمنطقة.</p>
+      </div>
+    </div>
+    <p class="lede">KeyFilm Gulf &amp; Digital is the launch and content arm of Key Films, Cairo. We take new news, entertainment and streaming services from plan to air: distribution on satellite, OTT and FAST, the launch campaign and media buying, the content that keeps audiences coming back, and the production behind it.</p>
+  </div>
+
+  <figure class="hero-img">
+    <img src="images/sphinx-avenue.jpg" alt="Illuminated procession along the Sphinx Avenue in Luxor at night" width="959" height="647">
+    <figcaption class="wrap">The Sphinx Avenue opening, Luxor · produced by Key Films</figcaption>
+  </figure>
+
+  <div class="rail" aria-label="At a glance">
+    <div class="wrap">
+      <span><b>Since 2004</b> in Arab TV &amp; streaming</span>
+      <span>Filming permits: <b>EG · AE · MA · LB</b></span>
+      <span>Platforms: <b>Satellite · OTT · FAST · Social</b></span>
+      <span>Bases: <b>Cairo · Dubai · London</b></span>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head"><h2>What we do</h2><span class="ar">خدماتنا</span></div>
+      <div class="services">
+        <article class="svc">
+          <span class="tc">CHANNEL &amp; PLATFORM LAUNCH</span>
+          <h3>Go-to-market for new channels and OTT services</h3>
+          <p class="ar-t" lang="ar">إطلاق القنوات والمنصات</p>
+          <p>Launch strategy, positioning and distribution: satellite carriage, OTT apps and smart TV, FAST channels, YouTube and pay-TV partners.</p>
+          <ul><li>Nilesat</li><li>Arabsat</li><li>OTT apps</li><li>FAST</li><li>YouTube</li></ul>
+        </article>
+        <article class="svc">
+          <span class="tc">CAMPAIGNS &amp; MEDIA BUYING</span>
+          <h3>Launch campaigns that reach the whole Arab audience</h3>
+          <p class="ar-t" lang="ar">حملات الإطلاق وشراء المساحات الإعلانية</p>
+          <p>Campaign planning and media buying across TV, digital, social, outdoor and creators in the GCC, Egypt, the Levant and the Arab diaspora, with weekly reporting against agreed targets.</p>
+          <ul><li>TV</li><li>Paid social</li><li>Outdoor</li><li>Creators</li><li>PR</li></ul>
+        </article>
+        <article class="svc">
+          <span class="tc">CONTENT &amp; PROGRAMMING</span>
+          <h3>Programming that builds a daily audience</h3>
+          <p class="ar-t" lang="ar">المحتوى والبرمجة</p>
+          <p>Programme slates, news and talk formats, social-first video, presenters and talent, acquisitions and original series for broadcasters and streaming services.</p>
+          <ul><li>News &amp; talk</li><li>Social video</li><li>Originals</li><li>Acquisitions</li></ul>
+        </article>
+        <article class="svc">
+          <span class="tc">PRODUCTION</span>
+          <h3>Studios, crews and promos</h3>
+          <p class="ar-t" lang="ar">خدمات الإنتاج</p>
+          <p>With Key Films: launch promos and brand films, studio and field crews, pre- and post-production, and filming permits across the region.</p>
+          <ul><li>Egypt</li><li>UAE</li><li>Morocco</li><li>Lebanon</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Recent work</h2><span class="ar">من أعمالنا</span></div>
+      <div class="gallery">
+        <figure class="g-wide"><img src="images/karnak-opet.jpg" alt="Fireworks over Karnak Temple during the Opet Festival" loading="lazy"><figcaption>Opet Festival, Karnak · event production</figcaption></figure>
+        <figure><img src="images/luxor-procession.jpg" alt="Performers in a night procession in Luxor" loading="lazy"><figcaption>Luxor procession · event production</figcaption></figure>
+        <figure><img src="images/el-mokhber.jpg" alt="Key art for the TV programme El Mokhber" loading="lazy"><figcaption>El Mokhber · TV programme</figcaption></figure>
+        <figure><img src="images/red-band.jpg" alt="Key art for the TV series Red Band" loading="lazy"><figcaption>Red Band · TV series</figcaption></figure>
+        <figure><img src="images/studio-set.jpg" alt="Crew lighting a studio set during a shoot" loading="lazy"><figcaption>On set · studio production</figcaption></figure>
+        <figure><img src="images/camera-crew.jpg" alt="Camera operator with a stabilised rig in backlight" loading="lazy"><figcaption>Crews &amp; camera</figcaption></figure>
+        <figure class="g-wide"><img src="images/red-sea.jpg" alt="Aerial view of the Red Sea coast with boats" loading="lazy"><figcaption>Aerial &amp; location filming · Red Sea</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="ads" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Latest commercials</h2><span class="ar">أحدث الإعلانات</span></div>
+      <div class="ads">
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DdcClbIsdaC/" target="_blank" rel="noopener"><img src="images/ad-visa.jpg" alt="Still from the Visa Egypt commercial" loading="lazy"><b>Visa Egypt</b><span>Agency: Leo Burnett Cairo</span></a>
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DbnxEOFMltA/" target="_blank" rel="noopener"><img src="images/ad-we.jpg" alt="Still from the Telecom Egypt WE summer commercial" loading="lazy"><b>Telecom Egypt · WE</b><span>Featuring Ahmed Malek</span></a>
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DVBu7f7jL2R/" target="_blank" rel="noopener"><img src="images/ad-valu.jpg" alt="Still from the valU Ramadan commercial" loading="lazy"><b>valU · Ramadan</b><span>Featuring Ahmad Fahmy · Agency: FP7 McCann Cairo</span></a>
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DdbM6MSsAw2/" target="_blank" rel="noopener"><img src="images/ad-geely-saadany.jpg" alt="Still from the Geely Aboghali Motors commercial" loading="lazy"><b>Geely · Aboghali Motors</b><span>Featuring Ahmad El Saadany</span></a>
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DcOAFcfsc-4/" target="_blank" rel="noopener"><img src="images/ad-knowledge-hub.jpg" alt="Still from The Knowledge Hub Coventry University commercial" loading="lazy"><b>The Knowledge Hub · Coventry University</b><span>Featuring Ahmed El Saadany</span></a>
+        <a class="ad" href="https://www.instagram.com/keyfilms.tv/reel/DYo9CznMPLZ/" target="_blank" rel="noopener"><img src="images/ad-geely-fahmy.jpg" alt="Still from the Geely commercial with Ahmad Fahmy and Enjy Kiwan" loading="lazy"><b>Geely · Aboghali Motors</b><span>Featuring Ahmad Fahmy &amp; Enjy Kiwan</span></a>
+      </div>
+      <p class="note">Produced by Key Films. Watch on <a href="https://www.instagram.com/keyfilms.tv/" target="_blank" rel="noopener">Instagram @keyfilms.tv</a>.</p>
+    </div>
+  </section>
+
+  <section id="launch" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>How a launch runs</h2><span class="ar">مراحل الإطلاق</span></div>
+      <ol class="phases">
+        <li>
+          <span class="tc">PHASE 1 · TEASER</span>
+          <h3>Build anticipation</h3>
+          <p class="ar-t" lang="ar">التشويق</p>
+          <p>Name and identity, presenter reveals, social channels live before air, first creator and press partnerships.</p>
+        </li>
+        <li>
+          <span class="tc">PHASE 2 · LAUNCH</span>
+          <h3>Go on air everywhere at once</h3>
+          <p class="ar-t" lang="ar">الإطلاق</p>
+          <p>Satellite, app and FAST live on the same day, backed by the main media buy, outdoor in key cities and a launch event.</p>
+        </li>
+        <li>
+          <span class="tc">PHASE 3 · SUSTAIN</span>
+          <h3>Turn viewers into a habit</h3>
+          <p class="ar-t" lang="ar">الاستمرارية</p>
+          <p>Always-on social video, performance media for app installs, and monthly optimisation against the numbers.</p>
+        </li>
+      </ol>
+      <div class="kpis">
+        <span class="tc">WHAT WE MEASURE</span>
+        <ul>
+          <li>Reach &amp; video views</li><li>App installs &amp; active users</li><li>Followers by platform</li><li>Live &amp; FAST viewing</li><li>Cost per result</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="people" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Partners</h2><span class="ar">الشركاء</span></div>
+      <div class="people">
+        <div class="person">
+          <div class="person-head">
+            <img class="portrait" src="images/ehab-aly.jpg" alt="Portrait of Ehab Aly" style="width:96px;height:96px">
+            <h3>Ehab Aly</h3>
+          </div>
+          <p class="role">Partner &amp; Managing Director, KeyFilm Gulf &amp; Digital</p>
+          <p>Ehab has spent more than twenty years making and programming Arabic television and streaming, on satellite channels, pay-TV and OTT, from the production floor to platform strategy. He leads KeyFilm's work with new channels, streaming services and creators across the Gulf and North Africa.</p>
+          <p class="ar-bio" lang="ar">إيهاب علي، شريك ومدير عام. أكثر من عشرين عامًا في الإنتاج التلفزيوني والمنصات الرقمية العربية.</p>
+          <ul class="cv">
+            <li><time>2004</time><span>Head of Production, Al-Hayah TV</span></li>
+            <li><time>OSN</time><span>Senior Producer-Director</span></li>
+            <li><time>Rotana</time><span>Content Manager</span></li>
+            <li><time>Today</time><span>Original content and streaming consultant, MENA</span></li>
+          </ul>
+          <div class="social"><a href="https://www.instagram.com/ehabbahgat/" target="_blank" rel="noopener">Instagram @ehabbahgat ↗</a></div>
+        </div>
+        <div class="person partner">
+          <img class="portrait" src="images/adel-abdalla.jpg" alt="Portrait of Adel Abdalla" loading="lazy">
+          <h3>Adel Abdalla</h3>
+          <p class="role">Partner · CEO / MD, Key Films</p>
+          <p>Adel leads Key Films, the Cairo production house behind commercial, event and documentary work for regional and global brands, with permits and crews across Egypt, the UAE, Morocco and Lebanon.</p>
+          <div class="social"><a href="https://www.keyfilms.tv" target="_blank" rel="noopener">keyfilms.tv ↗</a><a href="https://www.instagram.com/keyfilms.tv/" target="_blank" rel="noopener">Instagram @keyfilms.tv ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Selected Key Films clients</h2><span class="ar">من عملائنا</span></div>
+      <ul class="clients">
+        <li>Vodafone</li><li>Orange</li><li>Zain</li><li>Huawei</li>
+        <li>Emirates NBD</li><li>National Bank of Egypt</li><li>Banque du Caire</li><li>AXA</li>
+        <li>EgyptAir</li><li>Mercedes-Benz</li><li>Toyota</li><li>Carrier</li>
+        <li>PepsiCo</li><li>Procter &amp; Gamble</li><li>L'Oréal</li><li>Kellogg's</li>
+        <li>Kraft Heinz</li><li>Danone</li><li>Cadbury</li><li>Reckitt</li>
+        <li>GSK</li><li>Leo Burnett</li><li>valU</li><li>Magdi Yacoub Foundation</li>
+        <li>Visa</li><li>Telecom Egypt · WE</li><li>Geely</li><li>Palm Hills</li>
+      </ul>
+      <p class="note">Production work delivered by Key Films, Cairo.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="sec-head"><h2>Start a conversation</h2><span class="ar">تواصل معنا</span></div>
+      <div class="contact-grid">
+        <div>
+          <a class="email" id="email" href="mailto:ehabaly@keyfilm.net">ehabaly@keyfilm.net</a>
+          <div class="row">
+            <a class="btn solid" href="mailto:ehabaly@keyfilm.net">Email Ehab</a>
+            <button class="btn" type="button" id="copy">Copy address</button>
+          </div>
+          <p lang="ar" style="margin-top:18px">للتعاون والاستفسارات، راسلنا على البريد أعلاه.</p>
+        </div>
+        <div class="addr">
+          <b>Key Films · Cairo</b>
+          42 Khan Younis St, Agouza<br>Giza, Egypt<br>
+          <a href="https://www.keyfilms.tv" target="_blank" rel="noopener">keyfilms.tv</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 KeyFilm Gulf &amp; Digital</span>
+    <span>In partnership with Key Films, Cairo</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, addr='ehabaly@keyfilm.net';
+  function done(t){b.textContent=t;setTimeout(function(){b.textContent='Copy address'},1800)}
+  try{
+    navigator.clipboard.writeText(addr).then(function(){done('Copied')},function(){sel()});
+  }catch(e){sel()}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);done('Selected — press Copy')}
+});
+</script>
+
+</body>
+</html>
